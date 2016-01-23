@@ -1,0 +1,15 @@
+- title: "Home"
+  href: "/index.html"
+
+- title: "Learn"
+  href: "/learning-resources/"
+  subcategories:
+    - subtitle: "Learning topic 1"
+      subhref: "/learn1/"
+    - subtitle: "Learning topic 2"
+      subhref: "/learn2/"
+    - subtitle: "Learning topic 3"
+      subhref: "/learn3/"
+
+- title: "About Us"
+  href: "/about.html"
