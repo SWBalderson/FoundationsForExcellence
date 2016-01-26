@@ -10,9 +10,11 @@ title: Foundations For Excellence
 email: your-email@domain.com
 author: Simon Balderson
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Foundations for Excellence exists to share research, resources and best
+  practice for the support and development of talented young musicians, singers
+  and dancers. This is currently achieved through the online resource hub, the
+  commission of new information sheets on a variety of specific topics and the
+  biennial conference.
 baseurl: "/FoundationsForExcellence" # the subpath of your site, e.g. /blog
 url: "http://foundations-for-excellence.org" # the base hostname & protocol for your site
 twitter_username: jekyllrb
@@ -22,3 +24,6 @@ permalink: /resources/:title
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap

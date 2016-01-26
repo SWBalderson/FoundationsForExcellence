@@ -3,8 +3,6 @@ layout: default
 permalink: categories/
 ---
 
-<section class="story-section section section-on-bg">
-
 <h2>All Resource Posts</h2>
 
 <ul>
@@ -14,5 +12,3 @@ permalink: categories/
     {% endif %}
   {% endfor %}
 </ul>
-
-</section>
