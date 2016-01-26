@@ -1,12 +1,16 @@
 ---
 layout: default
 ---
-<h1>{{ page.category }}</h1>
+<h1>{{ page.categorytitle }}</h1>
 
 <ul>
-{% for post in site.categories[page.category] %}
-  <li>
-    {{ post.date | date: "%B %d, %Y" }}: <a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
+{% if site.categories[page.category] != null %}
+  {% for post in site.categories[page.category] %}
+    <li>
+      {{ post.date | date: "%B %d, %Y" }}: <a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+{% else %}
+  <h3>There are currently no resources in this category</h3>
+{% endif %}
 </ul>
