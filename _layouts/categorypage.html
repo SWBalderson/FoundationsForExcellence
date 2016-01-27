@@ -7,7 +7,7 @@ layout: default
 {% if site.categories[page.category] != null %}
   {% for post in site.categories[page.category] %}
     <li>
-      {{ post.date | date: "%B %d, %Y" }}: <a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+      <a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 {% else %}
